@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#000000">
+
+  <title>Page Not Found &mdash; Album 24/7</title>
+  <link rel="icon" type="image/png" sizes="180x180" href="assets/favicon.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --black: #000000;
+      --charcoal: #2F2F2F;
+      --gold: #A07F3A;
+      --wheat: #C8AA6F;
+      --sand: #E3D5BB;
+      --white: #FFFFFF;
+      --font-heading: 'Abril Fatface', Georgia, serif;
+      --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--black);
+      color: var(--sand);
+      font-family: var(--font-body);
+      min-height: 100svh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 24px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .error-card {
+      max-width: 520px;
+      width: 100%;
+      background-color: var(--charcoal);
+      border: 1px solid var(--gold);
+      border-radius: 16px;
+      padding: clamp(36px, 8vw, 56px) 28px;
+      box-shadow: 0 16px 48px rgba(0, 0, 0, 0.8), 0 0 24px rgba(200, 170, 111, 0.15);
+      position: relative;
+    }
+
+    .error-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 72px;
+      height: 72px;
+      margin-bottom: 24px;
+    }
+
+    .error-code {
+      font-family: var(--font-heading);
+      font-size: clamp(3.5rem, 8vw, 5rem);
+      color: var(--wheat);
+      line-height: 1;
+      margin-bottom: 12px;
+    }
+
+    .error-title {
+      font-family: var(--font-heading);
+      font-size: clamp(1.4rem, 3vw, 1.8rem);
+      color: var(--white);
+      margin-bottom: 16px;
+    }
+
+    .error-desc {
+      font-size: 0.95rem;
+      color: var(--sand);
+      line-height: 1.6;
+      margin-bottom: 32px;
+      opacity: 0.9;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 14px 28px;
+      min-height: 48px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      border-radius: 9999px;
+      text-decoration: none;
+      background-color: var(--wheat);
+      color: var(--black);
+      transition: all 0.25s ease;
+      box-shadow: 0 4px 20px rgba(200, 170, 111, 0.3);
+    }
+
+    .btn:hover {
+      background-color: var(--white);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 28px rgba(200, 170, 111, 0.45);
+    }
+  </style>
+</head>
+<body>
+  <div class="error-card">
+    <div class="error-badge">
+      <svg viewBox="0 0 100 100" width="72" height="72" aria-hidden="true">
+        <defs>
+          <linearGradient id="eGold" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#E3D5BB"/>
+            <stop offset="50%" stop-color="#C8AA6F"/>
+            <stop offset="100%" stop-color="#A07F3A"/>
+          </linearGradient>
+        </defs>
+        <circle cx="50" cy="50" r="46" fill="none" stroke="url(#eGold)" stroke-width="4"/>
+        <path d="M50 8 L72 32 L40 40 Z" fill="url(#eGold)" opacity="0.9"/>
+        <path d="M85 30 L85 62 L60 46 Z" fill="url(#eGold)" opacity="0.85"/>
+        <path d="M85 68 L60 88 L52 60 Z" fill="url(#eGold)" opacity="0.9"/>
+        <path d="M50 92 L28 68 L60 60 Z" fill="url(#eGold)" opacity="0.85"/>
+        <path d="M15 70 L15 38 L40 54 Z" fill="url(#eGold)" opacity="0.9"/>
+        <path d="M15 32 L40 12 L48 40 Z" fill="url(#eGold)" opacity="0.85"/>
+        <text x="50" y="55" font-family="'Inter', sans-serif" font-weight="900" font-size="16" fill="url(#eGold)" text-anchor="middle">24/7</text>
+      </svg>
+    </div>
+
+    <div class="error-code">404</div>
+    <h1 class="error-title">Page Not Found</h1>
+    <p class="error-desc">The requested page or resource could not be found. Let's return you to the Atelier showcase.</p>
+
+    <a href="/" class="btn">Return to Atelier Home</a>
+  </div>
+</body>
+</html>
